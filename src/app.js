@@ -1,6 +1,5 @@
 import { version, Component } from 'inferno';
 import Logo from './logo';
-import '../public/styles/app.scss';
 
 class App extends Component {
   render() {
