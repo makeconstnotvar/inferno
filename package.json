@@ -1,0 +1,28 @@
+{
+  "name": "inf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-inferno": "^6.0.4",
+    "body-parser": "latest",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^5.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "helmet": "^3.15.0",
+    "inferno": "^7.0.5",
+    "inferno-router": "^7.0.5",
+    "inferno-server": "^7.0.5",
+    "webpack": "^4.29.0"
+  }
+}

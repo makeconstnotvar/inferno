@@ -1,0 +1,6 @@
+{
+  "client": {
+    "test": 1
+  },
+  "ssr": false
+}
