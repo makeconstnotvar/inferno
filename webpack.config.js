@@ -1,14 +1,10 @@
 const path = require('path');
-const VueLoaderPlugin = require("vue-loader").VueLoaderPlugin;
-const merge = require("webpack-merge");
-const path = require('path');
-const baseConfig = require("./webpack.config.base");
 
 module.exports = {
-  
+
   mode: 'development',
   entry: {
-    client: './src/index.js',
+    scripts: './src/index.js',
   },
   output: {
     filename: '[name].js',
@@ -25,8 +21,7 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env'],
             plugins: [
-              '@babel/plugin-transform-async-to-generator',
-              '@babel/babel-plugin-syntax-jsx',
+              '@babel/plugin-syntax-jsx',
               ["babel-plugin-inferno", {"imports": true}]
             ]
           }
@@ -35,10 +30,10 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js'],
     modules: [
       path.resolve(__dirname, 'node_modules'),
-      path.resolve(__dirname, 'app'),
+      path.resolve(__dirname, 'src'),
     ]
   },
   plugins: [],
